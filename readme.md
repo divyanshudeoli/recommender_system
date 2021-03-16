@@ -1,1 +1,3 @@
-Hybrid Recommender System
+#Hybrid Recommender System
+Content based filtering
+Collaborative filtering
