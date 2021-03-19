@@ -3,13 +3,17 @@
 <head>
 	<title></title>
 <style>
-		* {
+	* {
 		  box-sizing: content-box;
 		}
-	body{
-    	background-image: url({{url_for('static',filename="moviebackground.jpg")}});
+	body, html {
+	  height: 100%;
+	}
+	.bg{
+    	background-image: url({{url_for('static',filename="image.jpg")}});
     	background-repeat: no-repeat;
     	background-size: cover;
+
 	}
 	  .button {
 	  	display: inline-block;
@@ -41,8 +45,8 @@
 </style>
 </head>
 <body>
-	<button class="button buttont">Trending</button>
-	<button class="button buttonp">Top rated</button>
+	<button class="button buttont" onclick="trend()">Trending</button>
+	<a href=toprated><button class="button buttonp">Top rated</button></a>
 	<input type="search" placeholder="Search">
 </body>
 </html>

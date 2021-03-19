@@ -5,6 +5,14 @@ app=Flask(__name__)
 @app.route("/home")
 def Hello():
 	return render_template("home.html")
+
+@app.route("/trend")
+def trend():
+	return render_template("trending.html")
+
+@app.route("/toprated")
+def toprated():
+	return render_template("toprated.html")
+
 if __name__ == '__main__':
-    app.run(debug=True)
-    TEMPLATES_AUTO_RELOAD=True
+	app.run(host='0.0.0.0',port=8080)
